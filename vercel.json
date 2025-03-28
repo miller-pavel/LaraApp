@@ -3,7 +3,8 @@
         {
             "src": "package.json",
             "use": "@vercel/static-build",
-            "config": { "outputDirectory": "public/build" }
+            "config": { "outputDirectory": "public/build" },
+            "buildCommand": "next build"
         }
     ]
 }
