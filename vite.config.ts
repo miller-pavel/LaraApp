@@ -5,6 +5,9 @@ import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+    build: {
+        outDir: 'public/build', // Або інша директорія
+      }
     plugins: [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.tsx'],
